@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import AppFooter from './AppFooter';
+import AppContent from './AppContent';
 import './index.css';
 
 class App extends Component {
@@ -14,8 +15,16 @@ class App extends Component {
     }else if(currentTime > 18 && currentTime <= 24){
       timeLang = 'Good Evening'
     }
+
+    const content = {
+      title: 'Title',
+      subject: 'subject',
+      author: 'bryce',
+    }
+
     return (
       <div>
+        <AppContent {...content}></AppContent>
         <div>
           <h1 className='header'>Hello, World!</h1>
           <h2>{timeLang}</h2>
