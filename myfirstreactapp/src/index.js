@@ -22,9 +22,11 @@ class App extends Component {
       author: 'bryce',
     }
 
+    const test = "test";
+
     return (
       <div>
-        <AppContent {...content}></AppContent>
+        <AppContent test/>
         <div>
           <h1 className='header'>Hello, World!</h1>
           <h2>{timeLang}</h2>
